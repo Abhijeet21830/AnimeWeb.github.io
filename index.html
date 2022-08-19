@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>AnimeWeb</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light navbar-light py-2 m fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <h3>Anime Web</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#gen" class="nav-link">
+                            <h4>Genres</h4>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <h4>News</h4>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Recommendations" class="nav-link">
+                            <h4>Recommendations</h4>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- login section -->
+    <section>
+        <div class="section bg-dark text-light py-5 my-3 text-center">
+            <div class="container pt-5">
+                <div class="d-sm-flex">
+                    <div>
+                        <h1>Welcome to <span class="text-warning">Anime Web</span></h1>
+                        <p>
+                            Know about Anime Genres,latest news and some basic Recommendations.
+                        </p>
+                        <button class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#myModal">Login</button>
+                        <button class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#myModal">Signup</button>
+                    </div>
+                    <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                      
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                              <h4 class="modal-title text-dark">Login / Signup</h4>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                      
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <form action="/action_page.php">
+                                    <div class="mb-2 mt-2">
+                                      <label for="email">Email:</label>
+                                      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="pwd">Password:</label>
+                                      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                                    </div>
+                                    <div class="form-check mb-3">
+                                      <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name=" remember" ><h6 class="text-secondary">Remember me</h6> 
+                                      </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                  </form>
+                                </div>
+                                
+                            </div>
+                      
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                      
+                          </div>
+                        </div>
+                        <img class="img-fluid w-50 h-50  px-5" src="gojo.jpg" alt="Gojo Sensei Chibi">
+                    </div>
+                    <!-- <img class="img-fluid w-50 h-50  px-5" src="gojo.jpg" alt="Gojo Sensei Chibi"> -->
+                </div>
+        </div>
+        </div>
+    </section>
+    <section id="gen">
+        <div class="container-fluid">
+            <div class="h3 text-center pt-3 pb-4  bg-dark text-warning">Anime Genres</div>
+        </div>
+        <div class="container pb-4" id="geners">
+
+            <div class="row match-to-row" id="images">
+                <div class="col-md">
+
+                    <img src="shonen.jpg" alt="">
+
+                </div>
+                <div class="col-md">
+
+                    <img src="slice of life.jpg" alt="">
+
+                </div>
+                <div class="col-md">
+
+                    <img src="sports.jpg" alt="">
+                </div>
+
+                <div class="col-md">
+
+                    <img src="isekai.jpg" alt="">
+
+                </div>
+                <div class="row match-to-row" id="geners">
+                    <div class="col-md text-center">
+                        <h4>Shonen</h4>
+                    </div>
+                    <div class="col-md text-center">
+                        <h4>Slice of life</h4>
+                    </div>
+                    <div class="col-md text-center">
+                        <h4>Sports</h4>
+                    </div>
+                    <div class="col-md text-center">
+                        <h4>Isekai</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- anime Genres explained -->
+    <section class="bg-dark mb-4">
+        <div class="container pt-5 ">
+            <div class="row">
+                <div class="col">
+                    <img src="shonen animes.png" alt="">
+                </div>
+                <div class="col text-center text-light">
+                    <div class="text-warning text-center">
+                        <h3>Shonen</h3>
+                    </div>
+
+                    <p>target audience demographic turner into a genre, the word literally means ‘a young boy’. The
+                        Shōnen (Shounen) genre is aimed for young teen boys.
+
+                        It usually consists of a fictional world where the protagonist is a young boy who wants to
+                        achieve something in his life.
+                        This genre of anime is very popular not only among its targeted audience but among a crowd of
+                        all ages as the optimistic and the coming of age journey is the main focus.
+
+                        Popular examples include Demon Slayer, Naruto, Bleach, Dragon Ball Series, One Piece, Black
+                        Clover, and so on.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-dark mb-4">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col">
+                    <img src="Romance-animes.jpg" alt="">
+                </div>
+                <div class="col text-center text-light">
+                    <div class="text-warning text-center">
+                        <h3>Slice of life</h3>
+                    </div>
+
+                    <p>Slice of Life are anime's that doesn't lead to something to the end
+
+                        It is just the normal everyday life showed everyday
+
+                        Where there is no start and there is no end
+                        Well the genre slice of life basically means following characters on their day to day life,
+                        meaning that the anime could be about them simply going shopping or hanging out together and
+                        talking about their likes. Focusing on the aspects of the characters daily lives is what makes
+                        an anime slice of life. Slice of life shows tend to also have a slower pace because it’s about
+                        you watching them go about their day as usual.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-dark mb-4">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col">
+                    <img src="Sports-Animes.jpg" alt="">
+                </div>
+                <div class="col text-center text-light">
+                    <div class="text-warning text-center">
+                        <h3>Sports </h3>
+                    </div>
+
+                    <p>We all have a basic idea of sports anime. A plucky high school boy equipped with nothing but a
+                        do-or-die attitude and a strange talent enters into a hot-blooded world of fiery competition
+                        where everyone competes for the national championship. Every match is determined by last-minute,
+                        last-second, or even last-millisecond actions that throw the entire high school sports scene
+                        into chaos due to this plucky youngster’s gumption. Along the way, our hero will make new
+                        friends, including but not limited to a wise senior player who can see the true potential of the
+                        hero, an arrogant and contentious rival that they seem irresistibly attracted to, and a best
+                        friend who will always be there to cheer them on.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-dark mb-4">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col">
+                    <img src="isekai animes.jpg" alt="">
+                </div>
+                <div class="col text-center text-light">
+                    <div class="text-warning text-center">
+                        <h3>Isekai</h3>
+                    </div>
+
+                    <p>In isekai stories, the main protagonist must be either physically/mentally spirited away to
+                        another world, or reborn into this new world in a new form more powerful than their previous
+                        one. Sometimes these new worlds may simply be a different time period like in Chie Shinohara’s
+                        Red River or Rumiko Takahashi’s Inuyasha. Video games have proven a new and popular setting in
+                        modern isekai with some characters becoming trapped or transported into their favorite games, as
+                        in Reki Kawahara's Sword Art Online, or worlds that are similar, like in Kugane Maruyama's
+                        Overlord. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Recommendations" class="mt-2">
+        <div class="container-fluid">
+            <div class="h3 text-center pt-4 pb-4  bg-dark text-warning">Our Recommendations</div>
+        </div>
+        <div class="container" id="geners">
+
+            <div class="row match-to-row" id="images">
+                <div class="col-md">
+
+                    <img src="shonen.jpg" alt="">
+
+                </div>
+                <div class="col-md">
+
+                    <img src="second shonen.jpg" alt="">
+
+                </div>
+                <div class="col-md">
+
+                    <img src="sports.jpg" alt="">
+                </div>
+
+                <div class="col-md">
+
+                    <img src="second sports.jpg" alt="">
+
+                </div>
+                <div class="col-md">
+
+                    <img src="slice of life.jpg" alt="">
+
+                </div>
+                <div class="col-md">
+
+                    <img src="second slice of life.jpg" alt="">
+
+                </div>
+                <div class="col-md">
+
+                    <img src="isekai.jpg" alt="">
+                </div>
+
+                <div class="col-md">
+
+                    <img src="second isekai.jpg" alt="">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

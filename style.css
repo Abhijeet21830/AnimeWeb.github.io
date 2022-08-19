@@ -1,0 +1,24 @@
+img {
+     width: 80%;
+     height : 90%;
+     padding: 0px 0px;
+    }
+    .geners{
+         padding: auto;     
+    }
+    .col{
+        padding: 0%;
+    }
+    section{
+        padding: 0%;
+    }
+    .images {
+        padding-bottom: 0%;
+    }
+    .recommentations{
+        img{
+            width: 80% ; 
+            height: 70%;
+        }
+    }
+
